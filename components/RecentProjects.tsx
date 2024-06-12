@@ -14,35 +14,37 @@ const RecentProjects = () => {
             {projects.map(({id,title,des,img,iconLists,link})=>(
                <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]'>
                 <PinContainer title={link} href={link}>
-                    <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10'>
-                        <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                            <img src="/bg.png" alt="bg-img" />
-                        </div>
-                        <img src={img} alt={title} className='absolute bottom-0 z-10'/>
-                    </div>
-                    <h1 className='font-bold text-base md:text-xl lg:text-2xl line-clamp-1'>
-                        {title}
-                    </h1>
-                    <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>
-                        {des}
-                    </p>
-                    <div className='flex items-center justify-between mt-7 mb-3'>
-                        <div className='flex items-center'>
-                            {iconLists.map((icon, idx)=>{
-                                return <div key={icon} className='border border-white/[0.2] rounded-full bg-black lg:h-10 lg:w-10 h-8 w-8 flex justify-center items-center' style={{transform:`translateX(-${5*idx*2}px)`}}>
-                                    <img src={icon} alt={icon} className='p-2' />
-                                </div>
-                            })}
-                            <div className='flex justify-center items-center'>
-                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                                    Check Live Site
-                                </p>
-                                <FaLocationArrow className='ms-2' color='#CBACF9'/>
+                    <a href={link}>
+                        <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10'>
+                            <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
+                                <img src="/bg.png" alt="bg-img" />
                             </div>
-                            
+                            <img src={img} alt={title} className='absolute bottom-0 z-10'/>
                         </div>
+                        <h1 className='font-bold text-base md:text-xl lg:text-2xl line-clamp-1'>
+                            {title}
+                        </h1>
+                        <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>
+                            {des}
+                        </p>
+                        <div className='flex items-center justify-between mt-7 mb-3'>
+                            <div className='flex items-center'>
+                                {iconLists.map((icon, idx)=>{
+                                    return <div key={icon} className='border border-white/[0.2] rounded-full bg-black lg:h-10 lg:w-10 h-8 w-8 flex justify-center items-center' style={{transform:`translateX(-${5*idx*2}px)`}}>
+                                        <img src={icon} alt={icon} className='p-2' />
+                                    </div>
+                                })}
+                                <div className='flex justify-center items-center'>
+                                    <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
+                                        Check Live Site
+                                    </p>
+                                    <FaLocationArrow className='ms-2' color='#CBACF9'/>
+                                </div>
+                                
+                            </div>
 
-                    </div>
+                        </div>
+                    </a>
                 </PinContainer>
                 
                </div> 
