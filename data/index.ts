@@ -173,7 +173,7 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Full Stock Project",
+      title: "Full Stack Project",
       desc: "Built and Deployed an app using MERN Stack",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
