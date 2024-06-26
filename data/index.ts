@@ -181,21 +181,21 @@ export const navItems = [
     {
       id: 2,
       title: "Mobile App Dev - Flutter",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using Flutter.",
+      desc: "Designed and developed a mobile app for both iOS & Android platforms using Flutter.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
       title: "Freelance Web Dev Project",
-      desc: "Led the dev of a web app for a client, from initial concept to deployment.",
+      desc: "Led the development of a web app for a client, from initial concept to deployment.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
       title: "Team Lead for SIH",
-      desc: "Led a team to 6 to develop a website that helps hospitals optimize their workflow. Qualified for Round 2",
+      desc: "Led a team of 6 to develop a website that helps hospitals optimize their workflow. Qualified for Round 2",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
